@@ -11,6 +11,7 @@ const SurveyNew = () => <h2>SurveyNew</h2>;
 class App extends React.Component {
   componentDidMount() {
     this.props.onFetchUser();
+    console.log('dispatching');
   }
 
   render() {

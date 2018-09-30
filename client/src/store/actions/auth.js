@@ -8,5 +8,6 @@ export const fetchUser = () => async dispatch => {
 
 export const updateCredit = token => async dispatch => {
   const res = await axios.post('/api/stripe', token);
+  console.log(res);
   dispatch({ type: actionTypes.UPDATE_CREDIT, payload: res.data });
 };
