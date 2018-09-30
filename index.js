@@ -29,6 +29,7 @@ require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
+  console.log('from react');
   //express will serve up production asset
   //for example main.js or main.css
   app.use(express.static('client/build'));
